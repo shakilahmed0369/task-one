@@ -2,6 +2,16 @@
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
+    <div class="mb-5 rounded-xl border mb-4 border-sky-200 bg-sky-50/80 p-4 shadow-sm ring-1 ring-sky-100">
+            <div class="min-w-0 text-sm text-sky-900">
+                <p class="font-semibold tracking-wide">Demo credentials</p>
+                <div class="mt-1 space-y-0.5 text-sky-800">
+                    <p><span class="font-medium">Email:</span> user@gmail.com</p>
+                    <p><span class="font-medium">Password:</span> password</p>
+                </div>
+            </div>
+    </div>
+
     <form method="POST" action="{{ route('login') }}">
         @csrf
 
