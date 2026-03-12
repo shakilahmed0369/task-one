@@ -21,7 +21,7 @@ class PassportClient extends BaseClient
 
     public function skipsAuthorization(Authenticatable $user, array $scopes): bool
     {
-        // e.g., skip for clients that you mark/trust by checking name or id
-        return in_array($this->name, ['ecommerce-client', 'foodpanda-client']);
+        // Skip authorization for trusted clients
+        return in_array($this->name, ['ecommerce-client', 'foodpanda-client', 'foodpanda-client-new']);
     }
 }
