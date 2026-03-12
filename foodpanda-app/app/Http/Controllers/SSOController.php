@@ -69,6 +69,9 @@ class SSOController extends Controller
 
         Auth::login($user);
 
-        return redirect('/dashboard');
+        // Store access token in session for logout
+        session(['access_token' => $token['access_token']]);
+
+        return redirect()->route('dashboard');
     }
 }
