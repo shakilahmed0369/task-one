@@ -21,6 +21,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        Passport::authorizationView('passport::authorize');
+        Passport::authorizationView('passport.authorize');
     }
 }

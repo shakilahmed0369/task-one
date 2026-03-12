@@ -15,6 +15,11 @@ return [
 
     'name' => env('APP_NAME', 'Laravel'),
 
+    'sso_server' => env('SSO_SERVER'),
+    'sso_client_id' => env('SSO_CLIENT_ID'),
+    'sso_client_secret' => env('SSO_CLIENT_SECRET'),
+    'sso_redirect_uri' => env('SSO_REDIRECT_URI'),
+
     /*
     |--------------------------------------------------------------------------
     | Application Environment
