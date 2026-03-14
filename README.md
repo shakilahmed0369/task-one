@@ -1,5 +1,15 @@
 # SSO Project Documentation
 
+## Table of Contents
+
+- [Architecture Overview](#architecture-overview)
+- [Project Structure](#project-structure)
+- [Prerequisites](#prerequisites)
+- [Setup Guide](#setup-guide)
+- [How Full Flow Works](#how-sso-works)
+- [Routes](#routes)
+- [Troubleshooting](#troubleshooting)
+
 ## Architecture Overview
 
 This project implements a centralized Single Sign-On (SSO) system using Laravel Passport. The architecture consists of three main components:
